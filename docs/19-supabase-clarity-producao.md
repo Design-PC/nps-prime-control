@@ -44,11 +44,19 @@ Esse SQL cria:
 Para ativar Supabase:
 
 ```text
-SUPABASE_URL=
+SUPABASE_URL=https://thyorrnjmulazidpxcpr.supabase.co
 SUPABASE_SERVICE_ROLE_KEY=
 ```
 
 Essas variáveis são server-side. Nunca expor `SUPABASE_SERVICE_ROLE_KEY` no navegador.
+
+Status atual:
+
+- `SUPABASE_URL` identificado.
+- `SUPABASE_SERVICE_ROLE_KEY` recebido e configurado apenas no `.env.local` local.
+- Teste REST retornou `404`, indicando que as tabelas ainda precisam ser criadas no Supabase.
+
+Recomendação de segurança: como a `service_role key` foi compartilhada no chat, rotacionar a chave no Supabase depois da configuração inicial.
 
 ## Como Configurar
 
@@ -71,4 +79,3 @@ SUPABASE_SERVICE_ROLE_KEY=<service_role_key>
 Se Supabase não estiver configurado, o sistema usa fallback local em JSON para desenvolvimento.
 
 Em produção/Vercel, configurar Supabase antes de testar coleta real.
-
