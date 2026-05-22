@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { getDashboardData } from "@/lib/nps-db";
 
+export const dynamic = "force-dynamic";
+
 function formatPercent(value: number) {
   return `${value}%`;
 }
