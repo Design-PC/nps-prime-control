@@ -19,17 +19,17 @@ export default async function AdminDashboardPage() {
               src="/brand/prime-control-logo.png"
             />
           </div>
-          <span className="status-pill">Dashboard interno MVP</span>
+          <span className="status-pill">Área interna</span>
         </header>
 
         <section className="panel admin-overview">
           <div className="admin-title-row">
             <div>
-              <p className="eyebrow">NPS corporativo</p>
+              <p className="eyebrow">Área interna</p>
               <h1>Dashboard da Pesquisa</h1>
               <p>
                 Participação, conclusão, abandono por etapa e respostas
-                coletadas no MVP.
+                coletadas na pesquisa.
               </p>
             </div>
             <div className="actions">
@@ -37,7 +37,7 @@ export default async function AdminDashboardPage() {
                 Exportar CSV
               </Link>
               <Link className="button secondary" href="/nps/demo-prime-control">
-                Abrir pesquisa demo
+                Abrir pesquisa
               </Link>
             </div>
           </div>
